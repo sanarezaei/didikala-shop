@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     
     # external apps
     'mptt',
+    'django_humanize',
+    'django_render_partial',
     
     # internal apps
     'accounts',
@@ -134,3 +136,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static')
+
+# ckeditor settings
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_FILENAME_GENERATOR = 'utils.get_filename'

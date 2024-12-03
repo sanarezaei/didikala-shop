@@ -8,5 +8,5 @@ import admin_thumbnails
 @admin_thumbnails.thumbnail('image', 'تصویر برند')
 class BrandAdmin(admin.ModelAdmin):
     list_display = ['title', 'title_eng', 'image_thumbnail']
-    prepopulated_fields = {'slug': ('title_eng')}
+    prepopulated_fields ={"slug": ('title_eng', )}
 
