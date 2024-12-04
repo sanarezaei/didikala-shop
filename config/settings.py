@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     
     # external apps
     'mptt',
+    'django_filters',
     
     # internal apps
     'accounts',
